@@ -38,7 +38,13 @@ class MainActivity : ComponentActivity() {
                         route = Router.Login.Me.route, startDestination = Router.Login.Email.route
                     ) {
                         composableRoute(Router.Login.Email) {
-                            LogInScreen(navController)
+                            Route("",LogInScreen(navController) )
+//                            if (){
+//
+//                            }else{
+//
+//                            }
+//                            LogInScreen(navController)
                         }
                         composableRoute(Router.Login.Otp) {
                             OtpScreen(navController)
@@ -110,4 +116,18 @@ fun DefaultPreview() {
     WbankTheme {
         Greeting("Android")
     }
+}
+
+@Composable
+fun Route(token:String, Screen: Unit) {
+    if (
+        token.equals("")
+    ){
+
+    }
+    else{
+        Screen
+
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.example.wbank.src.dashboard.screen
 
+import FavoritesScreen
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -20,7 +21,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.wbank.src.dashboard.homescreen.screen.ContactsScreen
-import com.example.wbank.src.dashboard.homescreen.screen.FavoritesScreen
 import com.example.wbank.src.dashboard.homescreen.screen.GridViewScreen
 import com.example.wbank.src.dashboard.homescreen.screen.homescreen.HomeScreen
 import com.example.wbank.ui.theme.ButtonColor
@@ -103,9 +103,12 @@ fun BottomNavigationBar(navController: NavHostController) {
         val backStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = backStackEntry?.destination?.route
         NavBarItems.BarItems.forEach { navItem ->
+
             BottomNavigationItem(
-                modifier = Modifier.padding(top = 8.dp, bottom = 13.dp),// delete from phone
-//                    .padding(top = 8.dp, bottom = 0.dp),
+                modifier = Modifier.fillMaxSize().padding(top = 30.dp),
+//                modifier = Modifier.fillMaxSize()
+//                    //.padding(top = 8.dp, bottom = 13.dp)// delete from phone
+//                    .padding(top = 12.dp, bottom = 0.dp),
                 selected = currentRoute == navItem.route,
                 onClick = {
                     navController.navigate(navItem.route) {

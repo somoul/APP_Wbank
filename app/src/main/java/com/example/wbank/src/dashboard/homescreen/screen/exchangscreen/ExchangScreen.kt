@@ -65,7 +65,9 @@ fun TransferScreen(
             ) {
                 CustomButtomBack(navHostController, onClick = {
                     navHostController.navigateUp()
-                })
+                },
+                    modifier = Modifier
+                )
                 Spacer(modifier = Modifier.weight(1f))
                 Text(
                     text = "Exchange", style = MaterialTheme.typography.h4.copy(

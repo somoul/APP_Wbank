@@ -46,7 +46,6 @@ fun ContactsScreen() {
                     .wrapContentHeight(Alignment.CenterVertically)
                     .wrapContentWidth(Alignment.CenterHorizontally)
                     .padding(top = 15.dp)
-
                     .padding(start = 15.dp, top = 0.dp, end = 15.dp)
             ) {
                 Image(
@@ -170,7 +169,7 @@ fun ContactsScreen() {
                     }
                 }
                 Column(modifier = Modifier.padding(start = 20.dp, end = 20.dp)) {
-                    Row(horizontalArrangement = Arrangement.spacedBy(41.dp)) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(60.dp)) {
                         repeat(imageListShip.size) { index ->
                             CustomShip(
                                 nameShip = imageListShip[index].nameShip,
@@ -271,6 +270,7 @@ fun ContactsScreen() {
         }
     }
 }
+
 private fun Density.createStripeBrush(
     stripeColor: Color,
     stripeWidth: Dp,

@@ -47,7 +47,9 @@ fun SuccessScreen(navHostController: NavHostController, id: Int) {
         ) {
             CustomButtomBack(navHostController, onClick = {
                 navHostController.navigateUp()
-            })
+            },
+                modifier = Modifier
+            )
             Spacer(modifier = Modifier.weight(1f))
             Text(
                 text = "Success ", style = MaterialTheme.typography.h4.copy(

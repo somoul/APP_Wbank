@@ -23,7 +23,6 @@ import com.example.wbank.ui.theme.Purple200
 
 @Composable
 fun CustomShip(
-
     colorBackGround: Long,
     nameShip: String,
     nameShipExchange: String? = "",

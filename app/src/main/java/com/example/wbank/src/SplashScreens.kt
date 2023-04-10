@@ -36,21 +36,21 @@ import kotlinx.coroutines.delay
 fun SplashScreen(navController: NavController) {
     LaunchedEffect(key1 = true) {
         delay(2300)
-//        navController.navigate(Router.Login.Me) {
-//            this.popUpTo(Router.Splash.route) {
-//                this.inclusive = true
-//            }
-//        }
+        navController.navigate(Router.Login.Me) {
+            this.popUpTo(Router.Splash.route) {
+                this.inclusive = true
+            }
+        }
 //            navController.navigate(Router.Login.Otp) {
 //                this.popUpTo(Router.Splash.route) {
 //                    this.inclusive = true
 //                }
 //        }
-        navController.navigate(Router.Login.Dashboard) {
-            this.popUpTo(Router.Splash.route) {
-                this.inclusive = true
-            }
-        }
+//        navController.navigate(Router.Login.Dashboard) {
+//            this.popUpTo(Router.Splash.route) {
+//                this.inclusive = true
+//            }
+//        }
     }
     Column(
         modifier = Modifier

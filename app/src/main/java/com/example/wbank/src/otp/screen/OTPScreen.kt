@@ -49,7 +49,8 @@ fun OtpScreen(navController: NavController) {
             ) {
                 CustomButtomBack(navController, onClick = {
                     navController.navigateUp()
-                })
+                },
+                modifier = Modifier)
                 Spacer(modifier = Modifier.height(100.dp))
                 Text(
                     text = "Wbank",

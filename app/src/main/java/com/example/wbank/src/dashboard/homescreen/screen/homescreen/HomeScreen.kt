@@ -188,7 +188,7 @@ fun HomeScreen(navController: NavHostController) {
 
                 Column(modifier = Modifier.padding(start = 20.dp, end = 20.dp)) {
 
-                    Row(horizontalArrangement = Arrangement.spacedBy(42.dp)) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(60.dp)) {
                         repeat(imageListShip.size) { index ->
                             CustomShip(
                                 nameShip = imageListShip[index].nameShip,

@@ -38,7 +38,9 @@ fun DetailCartTransactionScreen(
             Row {
                 CustomButtomBack(navHostController, onClick = {
                     navHostController.navigateUp()
-                })
+                },
+                    modifier = Modifier
+                )
                 Spacer(modifier = Modifier.weight(1f))
                 Column(
                     modifier = Modifier

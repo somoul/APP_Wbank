@@ -17,11 +17,12 @@ import androidx.navigation.NavController
 @Composable
 fun CustomButtomBack(
     navController:NavController,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier
 ) {
     Box() {
         IconButton(
-            onClick =onClick, modifier = Modifier.width(37.dp).height(37.dp).padding(end = 10.dp)
+            onClick =onClick, modifier = modifier.width(37.dp).height(37.dp).padding(end = 10.dp)
 
         ) {
             Icon(

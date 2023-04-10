@@ -1,5 +1,4 @@
 package com.example.booking_app.ui.theme.navigation
-
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
